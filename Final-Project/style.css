@@ -1,0 +1,431 @@
+/*Universal box-sizing for all elements*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family:"Roboto", sans-serif;
+	background-color: #94b8b8;
+	overflow-x: hidden;
+}
+
+/*style header-----------------------------*/
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 49px;
+	z-index: 1;
+	background-color: #94b8b8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	max-width: 1430px;
+}
+
+.navigation a {
+	text-decoration: none;
+	font-family: "Lucida Grande", sans-serif;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: bold;
+	height: 100%;
+}
+
+.navigation a:hover {
+	color: #444444;
+	background-color: #fff;
+}
+
+.overlay-content {
+	display: none;
+}
+
+.openbtn {
+	display: none;
+}
+
+.closebtn {
+	display: none;
+	font-family: "Kaushan Script", cursive;
+}
+
+/*style main---------------------------------*/
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 49px;
+}
+
+.img-div {
+	background-image:url(Images/Petros\ Petrou\ 3.jpg);
+	width: 100%;
+	height: 90vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.text {
+	position: absolute;
+	top: 5vh;
+	left: 5vw;
+	/* transform: translate(-85%, -150%); */
+	color: #ffffff;
+}
+
+.title {
+/* font-size: 100px; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+.img-caption {
+    font-family: "Homemade Apple", cursive;
+    font-size: 50px;
+    margin-top: 5px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/*style biography section-------------------------*/
+/* all h2 in the document */
+h2 {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+#biography {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	padding-top: 65px;
+	background-color: #f2f2f2;
+	width: 100%;
+}
+
+.tribute-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 90px 40px 90px;
+}
+
+.tribute-info img {
+    width: 200px;
+	height: 200px;
+	border-radius: 100%;
+    object-fit: cover;
+    padding: 20px;
+    
+}
+
+.tribute-info p {
+	max-width: 800px;
+	line-height: 1.8;
+	padding: 20px;
+	font-size: 18px;
+    text-align: center;
+}
+
+/*style Timeline section-------------------------*/
+#timeline {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.poster {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+	border-radius: 12px;
+	border: 4px dotted grey;
+	box-shadow: 5px 10px 14px rgb(81, 82, 82, 0.4);
+	width: 1600px;
+    margin: 20px 20px;
+}
+
+.poster img {
+	width: 350px;
+	height: 350px;
+	border-radius: 40%;
+	border: 1px solid #cccccc;
+}
+
+.poster ul {
+    flex-direction: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+    font-size: 20px;
+    text-size-adjust: 20px;
+}
+
+/*style taught section-------------------------------*/
+
+#taught {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+	padding: 65px;
+	width: 100%;
+    background-color:#f2f2f2
+}
+
+.taught-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    flex-wrap: wrap;
+	width:100%;
+	padding: 20px;
+	background-color: #94b8b8;
+	border-radius: 12px;
+	box-shadow: 5px 10px 14px rgb(81, 82, 82, 0.4);
+	margin: 20px;
+}
+
+.taught-card img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 1px solid #cccccc;
+}
+
+.taught-card p {
+	margin: 10px 0;
+}
+
+.taught-card p:first-of-type {
+	margin-top: 30px;
+}
+
+/* style info section -----------------------------*/
+
+#loving {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0;
+   
+}
+#loving h2,p {
+    text-align: center;
+}
+
+/* style footer ----------------------------------*/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 49px;
+	background-color: #3d5c5c;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
+footer a:hover {
+	color: #c7c406;
+}
+
+/* media queries for tablets with screens 768px-----------*/
+
+@media screen and (max-width: 790px) {
+	.navigation a {
+		padding: 10px 12px;
+		font-size: 18px;
+	}
+
+	.tribute-info {
+		flex-direction: column;
+		padding: 50px 40px;
+	}
+
+	.tribute-info p {
+		width: 90%;
+	}
+
+	.movies {
+		padding: 40px;
+		align-items: flex-start;
+	}
+
+	.movies-left,
+	.movies-right {
+		width: 50%;
+		padding: 0;
+		margin: 10px;
+	}
+
+	.poster {
+		flex-direction: column;
+        padding: 20px;
+        margin: 10px;
+        width: 100%;
+	}
+
+	.poster img {
+		width: 110px;
+		height: 110px;
+	}
+
+	.poster ul {
+		padding-left: 30px;
+		font-size: 16px;
+	}
+
+	.row {
+		margin: 0 auto;
+		padding: 40px;
+	}
+
+	/* media queries for mobiles with screens 375px-----------*/
+}
+
+@media screen and (max-width: 500px) {
+	header {
+		justify-content: flex-end;
+	}
+
+	/* style navigation bar for small devices -----*/
+
+	.navigation {
+		display: none;
+	}
+
+	.overlay {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.9);
+		overflow-x: hidden;
+		transition: 0.5s;
+	}
+
+	.overlay-content {
+		position: relative;
+		top: 10%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		margin-top: 10px;
+		padding-left: 40px;
+	}
+
+	.overlay-content a,
+	.closebtn {
+		text-decoration: none;
+		font-family: "Kaushan Script", cursive;
+		color: #d8d4d4;
+		padding: 10px 20px;
+		font-size: 36px;
+		font-weight: bold;
+	}
+
+	.closebtn {
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 20px;
+		font-size: 60px;
+	}
+
+	.openbtn {
+		display: block;
+		float: right;
+		font-size: 22px;
+		padding: 10px 20px;
+		color: #fff;
+		font-weight: bold;
+	}
+
+	/* improve hero image position ------------------*/
+
+	.img-div {
+		background-position: center right 40%;
+	}
+
+	.title {
+		font-size: 45px;
+	}
+
+	.img-caption {
+		font-size: 22px;
+		margin-top: 0px;
+	}
+
+	.tribute-info {
+		flex-direction: column;
+		padding: 50px 30px;
+	}
+
+	.tribute-info p {
+		width: 100%;
+		padding: 20px 0;
+	}
+
+	.movies {
+		flex-direction: column;
+		padding: 40px 30px;
+		align-items: center;
+	}
+
+	.movies-left,
+	.movies-right {
+		width: 100%;
+	}
+
+	.row {
+		margin: 0 auto;
+		padding: 40px 30px;
+		max-width: 375px;
+	}
+
+	.award-card {
+		width: 290px;
+		padding: 20px;
+		margin: 20px 15px;
+	}
+
+	.award-card p {
+		margin: 10px;
+	}
+
+	.award-card p:first-of-type {
+		margin-top: 30px;
+	}
+
+}

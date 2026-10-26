@@ -1,0 +1,30 @@
+body {
+    padding: 20px;
+    colour: white;
+}
+#header {
+    background-color: #6ab170;   /* purple like the mock */
+    border: 2px solid black;
+    height: 70px;
+    margin-bottom: 15px;
+}.row {
+    display: flex;
+    gap: 15px;
+}
+.image{
+    border: 2px solid black;
+    flex: 1;
+    height: 150px;
+    min-width:0;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.box {
+    border: 2px solid black;
+    flex: 1;
+    height: 250px;
+    padding: 20px;
+}
+#orange    { background-color: #f6b26b; }
+#red    { background-color: #e06666; }
+#light-blue { background-color: #83cad6; }     

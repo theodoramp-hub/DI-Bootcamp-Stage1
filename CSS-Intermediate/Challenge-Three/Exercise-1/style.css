@@ -1,0 +1,29 @@
+body {
+    padding: 20px;
+}
+#footer {
+    background-color: #f3e8a9;   /* purple like the mock */
+    border: 2px solid black;
+    height: 70px;
+    margin-top: 15px;
+}
+.row {
+    display:flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.box {
+    border: 2px solid black;
+    height: 250px;
+}
+.red   { 
+    background-color: #e06666;
+    width: 110px;
+    height: 75px;
+ }
+.blue  { 
+    background-color: #639ada;
+     height: 75px;
+     flex: 1;
+ }
+

@@ -1,0 +1,41 @@
+body {
+    padding: 20px;
+}
+
+#header {
+    background-color: #6ab170;   /* green like the mock */
+    border: 2px solid black;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+/* Each row contains its floated children */
+.row {
+    overflow: hidden;            /* clears the floats so the row has a height */
+    margin-bottom: 15px;
+}
+
+/* Shared rules for images and coloured boxes */
+.image,
+.box {
+    float: left;
+    width: calc((100% - 30px) / 3);   /* 3 items, 2 gaps of 15px */
+    margin-right: 15px;
+    height: 150px;
+    border: 2px solid black;
+    box-sizing: border-box;           /* border included in the width */
+}
+
+/* No gap after the last item in each row */
+.image:last-child,
+.box:last-child {
+    margin-right: 0;
+}
+
+.image {
+    object-fit: cover;           /* crop the photo instead of squashing it */
+}
+
+#orange     { background-color: #f6b26b; }
+#red        { background-color: #e06666; }
+#light-blue { background-color: #83cad6; }
